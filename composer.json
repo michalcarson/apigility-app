@@ -1,0 +1,36 @@
+{
+  "name" : "dealerinspire/apigility-app",
+  "description" : "Static access to the Application and ServiceManager objects from within Apigility",
+  "license": "GPL3",
+  "keywords": [
+    "dependency",
+    "injection",
+    "servicemanager",
+    "apigility"
+  ],
+  "require" : {
+    "php" : "^5.5 || ^7.0",
+    "zfcampus/zf-apigility" : "~1.0"
+  },
+  "require-dev" : {
+    "zendframework/zendframework" : ">=2.5.1 <3.0",
+    "phpunit/phpunit" : "~5.7"
+  },
+  "support" : {
+    "email" : "development@dealerinspire.com",
+    "source" : "https://www.github.com/michalcarson/apigility-app"
+  },
+  "config" : {
+    "sort-packages" : true
+  },
+  "autoload": {
+    "psr-4": {
+      "DealerInspire\\ApigilityApp\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "DealerInspire\\ApigilityApp\\Test\\": "test/"
+    }
+  }
+}
