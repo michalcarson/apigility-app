@@ -95,7 +95,7 @@ use Zend\Mvc\Service\ServiceManagerConfig;
 use Zend\ServiceManager\ServiceManager;
 use ZF\Apigility\Application;
 
-$config = file_get_contents('../config/application.config.php');
+$config = require('../config/application.config.php');
 
 $serviceManager = new ServiceManager(new ServiceManagerConfig());
 $serviceManager->setService('ApplicationConfig', $config);
